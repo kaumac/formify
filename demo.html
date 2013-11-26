@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Teste</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.formify.js"></script>
+</head>
+<body>
+  <div>oi teste</div>
+  <div class="form-container">
+
+  </div>
+  <script type="text/javascript">
+  $(function () {
+    $('.form-container').formify({
+      url: 'http://mockit.com/contact/new',
+      token: '62bb61431348e22850828a5829c4373faafe29c1',
+      secret: '51a266c2844ccd5cac83d88de88d82d05358aa51',
+      fields: [
+        {
+          type: 'text',
+          name: 'name',
+          label: 'Nome',
+          placeholder: 'Qual seu nome?',
+          required: true
+        },
+        {
+          type: 'text',
+          name: 'email',
+          label: 'E-mail',
+          placeholder: 'Insira um e-mail válido',
+          required: true
+        },
+        {
+          type: 'select',
+          name: 'state',
+          label: 'Estado',
+          placeholder: 'Qual seu estado?',
+          fieldOptions: [
+            'PR',
+            'SC',
+            'SP',
+            'RS'
+          ]
+        }
+      ]
+    });
+  });
+  </script>
+</body>
+</html>
