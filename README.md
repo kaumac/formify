@@ -19,7 +19,7 @@ You can initialize the plugin by calling the formify function on a form element 
 $('#formify-container-example').formify(options);
 ```
 
-If you specify a <form> element, Formify will just add fields to this form element. If you specify a container like a <div> or <article>, formify will create a <form> element with the fields inside, inside this container.
+If you specify a **form** element, Formify will just add fields to this form element. If you specify a container like a **div** or **article** tag, formify will create a **form** element with the fields inside, inside this container.
 
 ###Options
 
@@ -47,21 +47,21 @@ $(function () {
           type: 'text',
           name: 'name',
           label: 'Name',
-          placeholder: 'Whats your name?',
+          placeholder: "What's your name?",
           required: true
         },
         {
           type: 'text',
           name: 'email',
           label: 'E-mail',
-          placeholder: 'Insira um e-mail válido',
+          placeholder: "What's your e-mail?",
           required: true
         },
         {
           type: 'select',
           name: 'state',
           label: 'Estado',
-          placeholder: 'Qual seu estado?',
+          placeholder: 'Where are you from?',
           fieldOptions: [
             'PR',
             'SC',
